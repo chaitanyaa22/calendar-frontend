@@ -23,7 +23,7 @@ class App extends Component {
       this.componentDidMount()
     }
 
-    if (this.props.error) {
+    if (this.props.error != preProps.error && this.props.error == true) {
       alert("Time Already Scheduled")
     }
 
