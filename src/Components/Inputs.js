@@ -32,7 +32,7 @@ class Inputs extends Component {
                 <input className="form-control border-0 bg-transparent m-1" value={this.state.time} onChange={(e) => this.setState({ time: e.target.value })} type="time" />
                 <input className="form-control border-0 bg-transparent m-1" value={this.state.title} onChange={(e) => this.setState({ title: e.target.value })} type="text" placeholder="Title" />
                 <input className="form-control border-0 bg-transparent m-1" value={this.state.link} onChange={(e) => this.setState({ link: e.target.value })} type="text" placeholder="Link" />
-                <input className="form-control border-0 bg-transparent m-1" value={this.state.people} onChange={(e) => this.setState({ people: e.target.value })} placeholder="Attendees" />
+                <input className="form-control border-0 bg-transparent m-1" value={this.state.people} onChange={(e) => this.setState({ people: e.target.value })} placeholder="Attendees (Separate with a comma)" />
                 <input className="form-control border-0 bg-transparent m-1" rows="3" value={this.state.info} onChange={(e) => this.setState({ info: e.target.value })} type="text" placeholder="Context"></input>
                 <button className="btn btn-sm btn-primary m-1 w-100" onClick={() => this.buttonClick()}>Add</button>
 

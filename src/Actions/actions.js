@@ -13,7 +13,7 @@ export const addCard = (state, date) => {
     let req = axios.post("https://calendarrrr.herokuapp.com/", {
         info: state.info,
         link: state.link,
-        people: state.people.split(", "),
+        people: state.people.split(",").map(item => item.trim()),
         date: String(new Date(String(date)).toDateString()),
         time: String(state.time),
         title: state.title
